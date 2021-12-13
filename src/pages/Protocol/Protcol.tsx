@@ -60,12 +60,6 @@ function Protocol() {
                 <div className={classes.header}>
                     <HeaderNavBar openHandler={navigationHandler} withBtn={true} />
                     <div className={classes.header_content}>
-                        <div className={classes.header_title}>
-                            <h1>Panopticon <span>v0.1</span></h1>
-                        </div>
-                        <div className={classes.header_subtitle}>
-                            <p>NFT future is here</p>
-                        </div>
                         <div className={classes.header_social_links}>
                             <Socials />
                         </div>
