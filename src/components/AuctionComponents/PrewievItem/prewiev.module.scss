@@ -1,0 +1,50 @@
+.content_prewiev{
+    max-width: 318px;
+    height: 393px;
+    width: 100%;
+    border: 1px solid #52325A;
+    box-sizing: border-box;
+    border-radius: 20px;
+    .content_prewiev_cont{
+        max-width: 257px;
+        width: 100%;
+        margin: auto;
+        .content_prewiev_title{
+            padding-top: 21px;
+            padding-bottom: 8px;
+            p{
+                font-family: GothamProMedium;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 34px;
+                color: #FFFFFF;
+            }
+        }
+        .content{
+            max-width: 257px;
+            width: 100%;
+            height: 300px;
+            background: #280731;
+            border: 2px dotted #4D2D55;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 30px rgba(255, 70, 91, 0.15);
+            border-radius: 20px;
+            .content_text{
+                max-width: 179px;
+                width: 100%;
+                margin: auto;
+                padding-top: 126px;
+                p{
+                    font-family: GothamProLight;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #908C91;
+                }
+            }
+        }
+    }
+}

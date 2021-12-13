@@ -1,0 +1,50 @@
+.header_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: -47px;
+    @media(max-width: 1550px) and (min-width: 319px) {
+        margin-right: 0px;
+    }
+    .nav_bar_cont {
+        flex-grow: 1;
+        padding-left: 50px;
+        @media (max-width: 900px) and (min-width: 319px){
+            padding-left: 0px;
+        }
+        .nav_bar_wrapper {
+            @media (max-width: 900px) and (min-width: 319px){
+                display: none;
+            }
+            max-width: 554px;
+            width: 100%;
+            margin: auto;
+        }
+        .nav_bar_wrapper_mobile{
+            display: none;
+            @media (max-width: 900px) and (min-width: 319px){
+                display: block;
+            }
+        }
+    }
+    .night_cont{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 209px;
+        width: 100%;
+    }
+    .night_btn {
+        margin-right: 20px;
+    }
+    .launch_app_btn {
+        width: 149px;
+    }
+    .with_out_btn{
+        display: none;
+        width: 149px;
+        @media (max-width: 900px) and (min-width: 319px){
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.Unlock{
+    max-width: 1002px;
+    width: 100%;
+    border: 1px solid #52325A;
+    box-sizing: border-box;
+    border-radius: 20px;
+    .container {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 21px;
+        @media(max-width: 750px) and (min-width: 319px) {
+            align-items: flex-start;
+        }
+        @media(max-width: 450px) and (min-width: 319px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .text_content{
+           .title{
+                p{
+                    font-family: GothamProMedium;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 34px;
+                    color: #FFFFFF;
+                }
+           } 
+        }
+        .toggle_btn{
+            @media(max-width: 450px) and (min-width: 319px) {
+                margin-top: -6px;
+            }
+        }
+    }
+    .text{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        @media(max-width: 450px) and (min-width: 319px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-top: 19px;
+        }
+        P{
+            font-family: GothamProLight;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            color: #9F9F9F;
+        }
+   }
+}

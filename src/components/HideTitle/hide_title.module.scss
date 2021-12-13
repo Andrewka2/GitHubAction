@@ -1,0 +1,21 @@
+.hide_title{
+    font-family: GothamProBlack;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 96px;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    color: #280731;
+    background: -webkit-linear-gradient(top, #FF465B 28px, #280731 85%, #280731);
+    background-clip: text;
+    -webkit-text-stroke: 2px transparent;
+    @media(max-width: 550px) and (min-width: 450px) {
+        font-size: 65px;
+        line-height: 66px;
+    }
+    @media(max-width: 450px) and (min-width: 319px) {
+        font-size: 45px;
+        line-height: 46px;
+    }
+}

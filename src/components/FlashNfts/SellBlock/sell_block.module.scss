@@ -1,0 +1,49 @@
+.SellBlock {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 30px rgba(255, 70, 91, 0.15);
+    background: linear-gradient(to right, #AB56FF, #FF455A);
+    border-image-slice: 1;
+    border-radius: 20px;
+    padding: 1px;
+    .container{
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        background: #280731;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        .text{
+            margin-right: 24px;
+            p{
+                font-family: GothamProMedium;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 15px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+            @media(max-width: 750px) and (min-width: 319px) {
+                margin-bottom: 20px;
+            }
+            @media(max-width: 650px) and (min-width: 319px) {
+                margin-right: 0px;
+            }
+            @media(max-width: 550px) and (min-width: 319px) {
+                p{
+                    line-height: 20px;    
+                }
+            }
+        }
+        .sell_btn{
+            max-width: 204px;
+            width: 100%;
+        }
+    }
+}

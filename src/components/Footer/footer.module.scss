@@ -1,0 +1,42 @@
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media(max-width: 1050px) and (min-width: 319px) {
+        flex-wrap: wrap;
+        .footer_navbar{
+            max-width: 850px !important;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .footer_year{
+            order: 2;
+            @media(max-width: 370px) and (min-width: 319px) {
+                text-align: center;
+                width: 300px;
+            }
+        }
+        .footer_links{
+            order: 3;
+            @media(max-width: 370px) and (min-width: 319px) {
+                margin: auto;
+                width: 160px;
+                margin-top: 20px;
+            }
+        }
+    }
+    .footer_navbar{
+        max-width: 512px;
+        width: 100%;
+    }
+    .footer_year{
+        p{
+            font-family: GothamProLight;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 15px;
+            color: #817983;
+        }
+    }
+}

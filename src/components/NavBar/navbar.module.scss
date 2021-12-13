@@ -1,0 +1,20 @@
+@import '../../assets/styles/mixins';
+
+.NavBar{
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        list-style-type: none;
+        a{
+            text-decoration: none;
+            @include links_text;
+            transition: all ease-in .2s;
+            cursor: pointer;
+            &:hover{
+                color: #FF465B;
+            }
+        }
+    }
+}

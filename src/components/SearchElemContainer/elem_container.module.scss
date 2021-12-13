@@ -1,0 +1,147 @@
+.SearchElemeContainer{
+    max-width: 1344px;
+    width: 100%;
+    border: 1px solid #52325A;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    @media(max-width: 550px) and (min-width: 319px) {
+        padding-bottom: 20px;
+    }
+    .container{
+        padding-top: 30px;
+        padding-left: 31px;
+        padding-right: 30px;
+        @media(max-width: 550px) and (min-width: 319px) {
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .input_container{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            .input{
+                width: 100%;
+                padding-right: 50px;
+                @media(max-width: 1050px) and (min-width: 310px) {
+                    padding-right: 0px;
+                }
+            }
+            @media(max-width: 1050px) and (min-width: 319px) {
+                flex-wrap: wrap;
+            }
+            .sort_items_text_mobile{
+                display: none;
+                @media(max-width: 1050px) and (min-width: 319px) {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 25px;
+                    p{
+                        font-family: GothamProLight;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 15px;
+                    color: #908C91;
+                    }
+                }
+
+            }
+        }
+        .search_items{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            max-width: 375px;
+            width: 100%;
+            border-bottom: 1px solid #4D2D55;
+            @media(max-width: 1050px) and (min-width: 319px) {
+                margin: auto;
+                margin-top: 30px;
+            }
+            .search_item{
+                label {
+                    padding-bottom: 12px;
+                }
+                label p {
+                    font-family: GothamProMedium;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 15px;
+                    color: #FFFFFF;
+                    padding-bottom: 9px;
+                    border-bottom: 3px solid transparent;
+                    transition: all ease-in .2s;
+                    cursor: pointer;
+                }
+                label input[type=radio] {
+                    position: absolute;
+                    z-index: -1;
+                    opacity: 0;
+                    display: block;
+                    width: 0;
+                    height: 0;
+                }
+                label input[type=radio]:checked + p {
+                    border-bottom: 3px solid #FF465B;
+                }
+            }
+        }
+        .sort_items_cont{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            @media(max-width: 750px) and (min-width: 370px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 320px;
+                margin: auto;
+                margin-top: 20px;
+            }
+            @media(max-width: 370px) and (min-width: 319px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 260px;
+                margin: auto;
+                margin-top: 20px;
+            }
+            .sort_items_text{
+                flex-grow: 1;
+                p{
+                    font-family: GothamProLight;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 15px;
+                    color: #908C91;
+                }
+                @media(max-width: 1050px) and (min-width: 319px) {
+                    display: none;
+                }
+            }
+            .select_item{
+                max-width: 319px;
+                width: 100%;
+                margin-right: 24px;
+                @media(max-width: 750px) and (min-width: 319px) {
+                    margin-right: 0px;
+                    margin-bottom: 30px;
+                }
+                @media(max-width: 1200px) and (min-width: 1050px) {
+                    max-width: 300px;
+                }
+            }
+            .icons_cont{     
+                max-width: 100px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}

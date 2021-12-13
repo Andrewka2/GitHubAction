@@ -1,0 +1,77 @@
+.item_page_img_wrapper {
+    max-width: 660px;
+    width: 100%;
+    height: 754px;
+    @media(max-width: 1380px) and (min-width: 1200px) {
+        height: 500px;
+    }
+    @media(max-width: 650px) and (min-width: 370px) {
+        height: 407px;
+        max-width: 356px;
+        width: 100%;
+        margin: auto;
+    }
+    @media(max-width: 370px) and (min-width: 319px) {
+        height: 357px;
+        max-width: 300px;
+        width: 100%;
+        margin: auto;
+    }
+    .item_page_img_block {
+        max-width: 660px;
+        width: 100%;
+        height: 754px;
+        border: 1px solid #52325a;
+        box-sizing: border-box;
+        border-radius: 20px;
+        @media(max-width: 1380px) and (min-width: 1200px) {
+            height: 500px;
+            width: 356px;
+        }
+        @media(max-width: 650px) and (min-width: 370px) {
+            height: 407px;
+            width: 356px;
+        }
+        @media(max-width: 370px) and (min-width: 319px) {
+            height: 357px;
+            width: 300px;
+        }
+        .item_page_img_container {
+            max-width: 206px;
+            height: auto;
+            margin: auto;
+            margin-top: 40px;
+            @media(max-width: 1380px) and (min-width: 1200px) {
+                width: 130px;
+            }
+            @media(max-width: 650px) and (min-width: 370px) {
+                width: 112px;
+                margin-top: 22px;
+            }
+            @media(max-width: 370px) and (min-width: 319px) {
+                width: 90px;
+                margin-top: 22px;
+            }
+            img {
+                max-width: 206px;
+                height: auto;
+                object-fit: contain;
+                @media(max-width: 1380px) and (min-width: 1200px) {
+                    height: 420px;
+                }
+                @media(max-width: 650px) and (min-width: 370px) {
+                    height: 363px;
+                }
+                @media(max-width: 370px) and (min-width: 319px) {
+                    height: 310px;
+                }
+            }
+        }
+    }
+    .learn_more_btn{
+        margin-top: 40px;
+        @media(max-width: 1200px) and (min-width: 319px) {
+            display: none;
+        }
+    }
+}

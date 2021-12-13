@@ -1,0 +1,351 @@
+@import "../../assets/styles/mixins";
+
+.Protocol {
+    width: 100%;
+    background: #280731;
+    background-image: url("../../assets/images/protocol/bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    position: relative;
+    overflow-x: hidden;
+    @media(max-width: 750px) and (min-width: 319px) {
+        background-image: url('../../assets/images/protocol/mobile_bg.png');
+    }
+    .mobile_navigation{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        z-index: 3 !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .exit{
+            margin-top: 40px;
+            margin-right: 40px;
+            color: #fff;
+            font-size: 50px;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            border: 2px solid #fff;
+            text-align: center;
+            p{
+                margin-top: -22px;
+            }
+        }
+    }
+    .container {
+        padding-top: 20px;
+        @include container;
+        .header {
+            .header_navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: -47px;
+                .nav_bar_cont {
+                    flex-grow: 1;
+                    padding-left: 50px;
+                    .nav_bar_wrapper{
+                        max-width: 554px;
+                        width: 100%;
+                        margin: auto;
+                    }
+                }
+                .night_btn{
+                    margin-right: 20px;
+                }
+                .launch_app_btn{
+                    max-width: 149px;
+                    width: 100%;
+                }
+            }
+            .header_content {
+                margin-top: 219px;
+                @media(max-width: 1380px) and (min-width: 1050px) {
+                    margin-top: 110px;
+                }
+                @media(max-width: 1050px) and (min-width: 750px) {
+                    margin-top: 60px;
+                }
+                @media(max-width: 750px) and (min-width: 550px) {
+                    margin-top: 109px;
+                }
+                @media(max-width: 550px) and (min-width: 370px) {
+                    margin-top: 69px;
+                }
+                @media(max-width: 370px) and (min-width: 319px) {
+                    margin-top: 49px;
+                }
+                .header_title {
+                    h1 {
+                        font-family: GothamProLight;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 50px;
+                        line-height: 48px;
+                        color: #ffffff;
+                        span {
+                            font-family: GothamProMedium;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 50px;
+                            line-height: 60px;
+                            color: #ffffff;
+                        }
+                    }
+                    @media(max-width: 550px) and (min-width: 319px) {
+                        h1{
+                            font-size: 30px;
+                            line-height: 29px !important;
+                            span{
+                                font-size: 30px;
+                            }
+                        }    
+                    }
+                }
+                .header_subtitle {
+                    margin-top: 26px;
+                    max-width: 546px;
+                    width: 100%;
+                    @media(max-width: 550px) and (min-width: 319px) {
+                        margin-top: 15px;
+                        p{
+                            font-size: 18px;
+                            line-height: 26px;
+                        }
+                    }
+                    p {
+                        font-family: GothamProLight;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: #9f9f9f;
+                    }
+                }
+                .header_social_links {
+                    margin-top: 35px;
+                    @media(max-width: 550px) and (min-width: 319px) {
+                        margin-top: 14px;
+                    }
+                }
+            }
+        }
+        .network_apps {
+            margin-top: 212px;
+            max-width: 1345px;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media(max-width: 1380px) and (min-width: 1050px) {
+                margin-top: 70px;
+            }
+            @media(max-width: 1050px) and (min-width: 750px) {
+                margin-top: 50px;
+            }
+            @media(max-width: 650px) and (min-width: 550px) {
+                margin-top: 160px;
+            }
+            @media(max-width: 550px) and (min-width: 370px) {
+                margin-top: 142px;
+            }
+            @media(max-width: 370px) and (min-width: 319px) {
+                margin-top: 100px;
+            }
+            .network_apps_text_container {
+                max-width: 539px;
+                width: 100%;
+                .network_apps_styled_text {
+                    p {
+                        font-family: GothamProLight;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 19px;
+                        color: #ff465b;
+                    }
+                }
+                .network_apps_title {
+                    margin-top: 28px;
+                    p {
+                        font-family: GothamProMedium;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 50px;
+                        line-height: 60px;
+                        color: #ffffff;
+                        span {
+                            color: #ff465b;
+                        }
+                    }
+                    @media(max-width: 550px) and (min-width: 319px) {
+                        margin-top: 20px;
+                        p{
+                            font-size: 30px;
+                            line-height: 31px;
+                        }
+                    }
+                }
+                .network_apps_subtitle {
+                    margin-top: 20px;
+                    max-width: 489px;
+                    @media(max-width: 550px) and (min-width: 319px) {
+                        margin-top: 15px;
+                    }
+                    p {
+                        font-family: GothamProLight;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: #9f9f9f;
+                    }
+                }
+            }
+            .network_apps_amount_cont {
+                max-width: 660px;
+                width: 100%;
+                height: 257px;
+                border: 1px solid #52325a;
+                box-sizing: border-box;
+                border-radius: 20px;
+                box-shadow: 0px 0px 100px rgba(255, 0, 199, 0.2);
+                @media(max-width: 1380px) and (min-width: 550px) {
+                    margin-top: 30px;
+                }
+                @media(max-width: 550px) and (min-width: 319px) {
+                    margin-top: 21px;
+                }
+                @media(max-width: 370px) and (min-width: 319px) {
+                    border-radius: 10px;
+                    height: 227px;
+                }
+                .network_apps_amount_text_container {
+                    padding-top: 32px;
+                    padding-left: 39px;
+                    @media(max-width: 370px) and (min-width: 319px) {
+                        padding-top: 20px;
+                        padding-left: 12px;
+                    }
+                }
+                .network_apps_amount_text {
+                    p {
+                        font-family: GothamProMedium;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 50px;
+                        line-height: 60px;
+                        color: #ff465b;
+                    }
+                    @media(max-width: 550px) and (min-width: 370px) {
+                        p{
+                            font-size: 30px;
+                            line-height: 31px;
+                        }
+                    }
+                    @media(max-width: 370px) and (min-width: 319px) {
+                        p{
+                            font-size: 26px;
+                            line-height: 27px;
+                        }
+                    }
+                }
+                .network_apps_amount_sub_text {
+                    padding-top: 15px;
+                    p {
+                        font-family: GothamProMedium;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 50px;
+                        line-height: 60px;
+                        color: #fff;
+                    }
+                    @media(max-width: 550px) and (min-width: 319px) {
+                        p{
+                            font-size: 30px;
+                            line-height: 31px;
+                        }
+                    }
+                    @media(max-width: 370px) and (min-width: 319px) {
+                        p{
+                            font-size: 26px;
+                            line-height: 27px;
+                        }
+                    }
+                }
+                .network_apps_btn{
+                    padding-top: 35px;
+                    @media(max-width: 550px) and (min-width: 370px) {
+                        padding-top: 85px;
+                    }
+                    @media(max-width: 370px) and (min-width: 319px) {
+                        padding-top: 75px;
+                    }
+                }
+            }
+        }
+        .developers {
+            margin-top: 96px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            .items_container {
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .footer{
+                    position: relative;
+                    z-index: 2;
+                }
+                @media(max-width: 1200px) and (min-width: 319px) {
+                    display: none;
+                }
+            }
+            .items_container_mobile{
+                width: 451px;
+                margin: auto;
+                display: none;
+                margin-top: 30px;
+                @media(max-width: 1200px) and (min-width: 319px) {
+                    display: block;
+                }
+                @media(max-width: 550px) and (min-width: 450px) {
+                    width: 381px;
+                }
+                @media(max-width: 450px) and (min-width: 319px) {
+                    width: 312px;
+                }
+            }
+        }
+    }
+    .footer{
+        margin-top: 185px;
+        padding-bottom: 41px;
+        @media(max-width: 550px) and (min-width: 319px) {
+            margin-top: 71px;
+        }
+    }
+    .footer_bg{
+        background-image: url('../../assets/images/footer/footer_bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 100%;
+        position: absolute;
+        width: 100%;
+        height: 422.4px;
+        bottom: 0%;
+        left: 0;
+        z-index: 1;
+        @media(max-width: 1050px) and (min-width: 319px) {
+            display: none;
+        }
+    }
+}

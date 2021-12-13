@@ -1,0 +1,43 @@
+@import './_vars.scss';
+
+@mixin links_text {
+    font-family: GothamProMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    color: $white;
+}
+
+@mixin container {
+    max-width: 1345px;
+    width: 100%;
+    margin: auto;
+    @media(max-width: 1380px) and (min-width: 1200px) {
+        max-width: 1140px;
+    }
+    @media(max-width: 1200px) and (min-width: 1050px) {
+        max-width: 1000px;
+    }
+    @media(max-width: 1050px) and (min-width: 900px) {
+        max-width: 850px;
+    }
+    @media(max-width: 900px) and (min-width: 750px) {
+        max-width: 700px;
+    }
+    @media(max-width: 750px) and (min-width: 650px) {
+        max-width: 600px;
+    }
+    @media(max-width: 650px) and (min-width: 550px) {
+        max-width: 500px;
+    }
+    @media(max-width: 550px) and (min-width: 450px) {
+        max-width: 400px;
+    }
+    @media(max-width: 450px) and (min-width: 370px) {
+        max-width: 350px;
+    }
+    @media(max-width: 370px) and (min-width: 319px) {
+        max-width: 300px;
+    }
+}

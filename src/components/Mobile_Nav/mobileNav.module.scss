@@ -1,0 +1,30 @@
+@import '../../assets/styles/mixins';
+
+.NavBar{
+        padding-top: 40px !important;
+        padding-left: 40px !important;
+    li{
+        list-style-type: none;
+        margin-bottom: 30px ;
+        a{
+            text-decoration: none;
+            font-family: GothamProBlack;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 40px;
+            color: #FFFFFF;
+            transition: all ease-in .2s;
+            &:hover{
+                color: #FF465B;
+            }
+        }
+        @media(max-width: 370px) and (min-width: 319px) {
+            margin-bottom: 30px;
+            a{
+                font-size: 25px;
+                line-height: 26px;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.NftItemsList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @media(max-width: 750px) and (min-width: 319px) {
+        justify-content: center;
+    }
+    .nftItemList{
+        width: 318px;
+        margin-bottom: 24px;
+    }
+    .margin{
+        margin-right: 24px;
+    }
+}
